@@ -1,8 +1,8 @@
 {  
     "config":{  
         "use_https":false,
-        "use_auth":true,
-        "use_alerts":true,
+        "use_auth":false,
+        "use_alerts":false,
         "use_openhab":false
     },
     "alerts":{  
@@ -30,7 +30,7 @@
         "port":""
     },
     "site":{  
-        "port":8081,
+        "port":8084,
         "port_secure":8444,
         "username":"user",
         "password":"12345",
@@ -39,18 +39,18 @@
     },
     "doors":{  
         "left":{  
-            "name":"LEFT",
+            "name":"Double Door",
             "relay_pin":23,
-            "state_pin":17,
+            "state_pin":18,
             "state_pin_closed_value":0,
             "approx_time_to_close":15,
             "approx_time_to_open":15,
             "openhab_name":"g_door_left"
         },
         "right":{  
-            "name":"RIGHT",
+            "name":"Single Door",
             "relay_pin":24,
-            "state_pin":21,
+            "state_pin":25,
             "state_pin_closed_value":0,
             "approx_time_to_close":15,
             "approx_time_to_open":15,
